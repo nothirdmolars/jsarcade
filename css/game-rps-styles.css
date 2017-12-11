@@ -1,0 +1,75 @@
+/* In game player selection styling */
+
+.rps-ingame-menu {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 6%;
+    width: 60%;
+}
+
+.rps-ingame-menu a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: #fff;
+    padding: 10px 7%;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: darkorange;
+    border-radius: 5px;
+}
+
+.rps-ingame-menu a:hover {
+    color: #5a2d90;
+    background-color: #56CAEF;
+}
+
+
+/* Tie game message styling */
+
+.rps-tie-message p {
+    margin-top: 1%;
+    color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/* Game results message/button styling */
+
+.rps-end-game-message {
+    margin-top: 1%;
+    margin-left: 5%;
+    color: #fff;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rps-end-game-message a {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: #ED298C;
+    border-radius: 5px;
+}
+
+.rps-end-game-message a:hover {
+    color: #5a2d90;
+    background-color: #56CAEF;
+}
+
+
+/* Title screen styling */
+
+.rps-title-background::after {
+    background: url(../media/images/lizard-landscape.jpg) center center no-repeat;
+    background-size: cover;
+}

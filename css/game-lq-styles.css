@@ -1,0 +1,90 @@
+/* Title screen styling */
+
+.lq-title-background::after {
+    background: url(../media/images/linequest-landscape-edit.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* General Styling */
+
+.lq-red {
+    color: #da0a0ada;
+}
+
+.lq-silver {
+    color: #949494;
+}
+
+
+/* Element Styling */
+
+.lq-game-info {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#lq-score-counter,
+#lq-slain-counter {
+    font-size: 28px;
+    color: rgb(238, 195, 55);
+}
+
+.lq-outcome-score-msg {
+    font-size: 20px;
+    color: #000;
+}
+
+.lq-outcome-outcome-msg p {
+    font-size: 15px;
+}
+
+.lq-game-info-overlay {
+    background-color: rgba(20, 15, 12, 0.87);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}
+
+.lq-overlay-text {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb100a1;
+    border-top: 12px #ffb100 solid;
+    border-bottom: 7px #ffb100 solid;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lq-overlay-header {
+    text-shadow: -5px 0px #513915;
+    font-size: calc(25px + 1.25vw);
+}
+
+.lq-overlay-subheader {
+    font-size: calc(18px + 1.25vw);
+}
+
+.lq-end-game-message {
+    text-align: center;
+    position: absolute;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.75);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+/* Canvas styling */
+
+#lq-canvas {
+    margin-top: 22vh;
+    width: 100vw;
+    height: 12vh;
+}

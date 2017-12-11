@@ -1,0 +1,87 @@
+/* In game player match selection styling */
+
+.mat-ingame-board {
+    height: 63%;
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.mat-match-choice {
+    float: left;
+    margin: .5%;
+    min-height: 39px;
+    height: calc(33px + 3vh);
+    font-size: calc(25px + 3vh);
+    background-color: darkorange;
+    text-align: center;
+    width: 24%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mat-match-choice:hover {
+    background-color: #fff;
+}
+
+.mat-selected-match-choice {
+    pointer-events: none;
+    cursor: default;
+    background-color: #56CAEF;
+}
+
+.mat-hint {
+    background-color: #5A2D90;
+}
+
+.mat-selected-match-choice i {
+    color: #000;
+}
+
+.mat-hint i {
+    color: #ED298C;
+}
+
+.mat-selected-match-choice i:last-child,
+.mat-hint i:last-child {
+    display: block !important;
+}
+
+.mat-selected-match-choice i:first-child,
+.mat-hint i:first-child {
+    display: none;
+}
+
+.mat-cleared {
+    visibility: hidden;
+}
+
+
+/* Game message and results styling */
+
+.mat-game-info {
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.mat-end-game-message {
+    text-align: center;
+    position: absolute;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.6);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+/* Title screen styling */
+
+.mat-title-background::after {
+    background: url(../media/images/match-portrait.jpg) center center no-repeat;
+    background-size: cover;
+}
