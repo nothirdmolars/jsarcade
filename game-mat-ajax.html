@@ -1,0 +1,155 @@
+<!-- THE HTML CONTENTS OF THIS FILE WILL BE LOADED INTO
+    THE MAIN GAMEPLAY WINDOW WHEN SELECTED -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MatchUP</title>
+</head>
+
+<body>
+
+    <!--Container for title screen element-->
+    <div id="title-screen">
+        <div id="title-logo" class="mat-title-background">
+            <h3 id="title-header" class="font-press-start yellow">MatchUP</h3>
+            <h5 id="title-sub-header" class="font-mont white">Find the matches, Beat your score</h5>
+        </div>
+        <a id="title-start-btn" class="font-press-start" href="#">NEW GAME</a>
+        <p id="title-message" class="white font-mont">Start a new game or press the home button to return to the game selection screen</p>
+    </div>
+
+    <div id="gameplay-screen" class="hide">
+        <!-- In game board of match choices -->
+        <div class="mat-ingame-board">
+            <div class="row">
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+            </div>
+            <div class="row">
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+            </div>
+            <div class="row">
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+            </div>
+            <div class="row">
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+            </div>
+            <div class="row">
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+            </div>
+            <div class="row">
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+                <a class="mat-match-choice" href="#">
+                    <i class="fa fa-question fa-inverse icon-reactive"></i>
+                    <i class="hide fa fa-home fa-inverse"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Display area for score and misses remaining -->
+        <div class="mat-game-info font-press-start white">
+            <p class="mat-score">SCORE</p>
+            <p class="mat-misses-remaining">MISSES TILL GAMEOVER</p>
+        </div>
+
+        <!-- Display area for endgame messages, hidden at game start -->
+        <div class="mat-end-game-message font-press-start hide">
+            <p class="mat-outcome-outcome-msg">DID YOU WIN?</p>
+            <p class="mat-outcome-score-msg">FINAL SCORE</p>
+            <p class="mat-outcome-new-highscore">You set a NEW HIGHSCORE!</p>
+            <a class="btn mat-outcome-play-again-btn" href="#">PLAY AGAIN?</a>
+            <a class="btn mat-outcome-quit-btn" href="#">QUIT</a>
+        </div>
+    </div>
+</body>
+
+</html>

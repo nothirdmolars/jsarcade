@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSArcade</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Loading general stylesheet and individual game styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/game-rps-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/game-mat-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/game-lq-styles.css">
+    <link rel="stylesheet" href="media/images/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Adding in favicon for desktop and devices -->
+    <link rel="shortcut icon" href="media/images/icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="media/images/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="media/images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="media/images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="media/images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="media/images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="media/images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="media/images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="media/images/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="media/images/icons/apple-touch-icon-180x180.png" />
+</head>
+
+<body class="font-mont">
+    <!--Modal popup for messages-->
+    <div id="modal" class="hide">
+        <div id="modal-popup">
+            <div id="modal-header" class="font-press-start">HEADING TEXT</div>
+            <div id="modal-content" class="font-mont">LOTS OF TEXT</div>
+            <div id="modal-close-btn">
+                <a class="modal-close-icon" href="#"><i class="fa fa-close fa-3x fa-inverse icon-reactive"></i></a>
+            </div>
+            <div id="modal-prompt-btns" class="font-press-start">
+                <a class="btn modal-confirm-btn" href="#">YES!</a>
+                <a class="btn modal-cancel-btn" href="#">CANCEL</a>
+            </div>
+        </div>
+    </div>
+    <!--Header menu-->
+    <div id="header-menu" class="row full-width font-press-start">
+        <!-- hamburger icons for mobile (Yum!) -->
+        <a class="burger-icon-open menu-selection" href="#">
+            <i class="fa fa-bars fa-inverse icon-reactive"></i>
+        </a>
+        <a class="burger-icon-close menu-selection" href="#">
+            <i class="fa fa-caret-square-o-up fa-inverse icon-reactive"></i>
+        </a>
+
+        <div class="col-8 col-t-8 non-mobile-menu">
+            <!-- empty placeholder div -->
+        </div>
+        <div class="col-4 col-t-4 non-mobile-menu">
+            <!-- icon menu grid -->
+            <div class="col-4 col-t-4 menu-selection">
+                <span class="fa-stack menu-icon">   
+                    <i class="fa fa-square fa-stack-2x fusia"></i> 
+                    <a id="menu-icon-help" href="#"><i class="fa fa-question fa-stack-1x fa-inverse icon-reactive"></i></a>
+                </span>
+            </div>
+            <div class="col-4 col-t-4 menu-selection">
+                <span class="fa-stack menu-icon">   
+                    <i class="fa fa-bookmark fa-stack-2x fusia"></i> 
+                    <a id="menu-icon-scores" href="#"><i class="fa fa-trophy fa-stack-1x fa-inverse icon-reactive"></i></a>
+                </span>
+            </div>
+            <div class="col-4 col-t-4 menu-selection menu-option-home hide">
+                <span class="fa-stack menu-icon">   
+                    <i class="fa fa-heart fa-stack-2x fusia"></i> 
+                    <a id="menu-icon-home" href="#"><i class="fa fa-home fa-stack-1x fa-inverse icon-reactive"></i></a>
+                </span>
+            </div>
+        </div>
+        <!-- hamburger menu dropdown sections for mobile -->
+        <div class="burger-menu full-width">
+            <ul>
+                <a href="#" class="burger-menu-help">
+                    <li>HELP</li>
+                </a>
+                <a href="#" class="burger-menu-scores">
+                    <li>HIGH SCORES</li>
+                </a>
+                <a href="#" class="burger-menu-home hide">
+                    <li>QUIT</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Game area (hidden by default)-->
+    <div id="game-area" class="col-12 col-t-12 hide">
+        <!--Container for gameplay screen, populated by AJAX call-->
+        <div id="game-content">
+        </div>
+    </div>
+    <!-- Black header overlay-->
+    <div id="header-overlay" class="col-12 col-t-12 grad-hor-dark"></div>
+
+    <!-- Main menu -->
+    <div class="full-height">
+        <div id="content" class="row">
+            <!--Game selections-->
+            <div class="col-4 col-t-4 game-selection background-mat">
+                <a class="game-choice game-name-mat" href="../game-mat-ajax.html">
+                    <h3>MatchUP</h3>
+                </a>
+            </div>
+
+            <div class="col-4 col-t-4 game-selection background-rps">
+                <a class="game-choice game-name-rps" href="../game-rps-ajax.html">
+                    <h3>Rock, Paper, Scissors, Lizzard, Spock</h3>
+                </a>
+            </div>
+
+            <div class="col-4 col-t-4 game-selection background-lq">
+                <a class="game-choice game-name-lq" href="../game-lq-ajax.html">
+                    <h3>Line Quest</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Black footer overlay with copywrite text-->
+    <div id="footer" class="row col-12 col-t-12">
+        <p id="copywrite" class="font-press-start">&#169;2017 AngelFruit&#174; Software<br>All rights reserved. </p>
+    </div>
+
+    <!-- Load JQUERY -->
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <!-- Load main script file -->
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

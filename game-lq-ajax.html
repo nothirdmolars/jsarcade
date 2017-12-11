@@ -1,0 +1,89 @@
+<!-- THE HTML CONTENTS OF THIS FILE WILL BE LOADED INTO
+    THE MAIN GAMEPLAY WINDOW WHEN SELECTED -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Quest</title>
+
+    <!-- Loading general stylesheet and individual game styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/game-lq-styles.css">
+    <link rel="stylesheet" href="media/images/icons/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class='lq-bg'>
+
+    <!-- Title screen -->
+    <div id="title-screen">
+        <div id="title-logo" class="lq-title-background">
+            <h3 id="title-header" class="font-press-start yellow">Line Quest</h3>
+            <h5 id="title-sub-header" class="font-mont white">A one dimensional adventure</h5>
+        </div>
+        <a id="title-start-btn" class="font-press-start" href="#">NEW GAME</a>
+        <p id="title-message" class="white font-mont">Start a new game or press the home button to return to the game selection screen</p>
+    </div>
+
+    <!-- Game elements used after selecting new game on the title screen -->
+    <div id="gameplay-screen" class="hide">
+        <!-- Message overlay -->
+        <div class="lq-game-info-overlay white hide">
+            <div class="lq-overlay-text">
+                <h1 class="lq-overlay-header font-press-start">TITLE MESSAGE</h1>
+                <p class="lq-overlay-subheader font-mont">TAGLINE</p>
+            </div>
+        </div>
+
+        <div class="lq-game-area">
+            <canvas id="lq-canvas"></canvas>
+        </div>
+
+        <!-- Display area for score and lives remaining -->
+        <div class="lq-game-info font-press-start white row">
+            <div class="col-4 col-t-4 lq-lives-area">
+                <p>LIVES:</p>
+                <div id="lq-lives-icons" class="lq-red">
+                    <span class="fa-stack lq-life">   
+                                        <i class="fa fa-shield fa-stack-2x lq-silver"></i> 
+                                        <i class="fa fa-heart fa-stack-1x lq-red"></i>
+                                    </span>
+                    <span class="fa-stack lq-life">   
+                                        <i class="fa fa-shield fa-stack-2x lq-silver"></i> 
+                                        <i class="fa fa-heart fa-stack-1x lq-red"></i>
+                                    </span>
+                    <span class="fa-stack lq-life">   
+                                        <i class="fa fa-shield fa-stack-2x lq-silver"></i> 
+                                        <i class="fa fa-heart fa-stack-1x lq-red"></i>
+                                    </span>
+                </div>
+            </div>
+
+            <div class="col-4 col-t-4 lq-score-area">
+                <p>SCORE:</p>
+                <div id="lq-score-counter">0</div>
+            </div>
+
+            <div class="col-4 col-t-4 lq-slain-area">
+                <p>SLAIN:</p>
+                <div id="lq-slain-counter">0</div>
+            </div>
+
+
+        </div>
+
+        <!-- Display area for endgame messages, hidden at game start -->
+        <div class="lq-end-game-message font-press-start hide">
+            <p class="lq-outcome-outcome-msg">HOW DID YOU DO (WIN or LOSE AT WHAT)</p>
+            <p class="lq-outcome-score-msg">FINAL SCORE</p>
+            <p class="lq-outcome-new-highscore">YOUR JOURNEY SET A NEW HIGHSCORE!</p>
+            <a class="btn lq-outcome-play-again-btn" href="#">PLAY AGAIN?</a>
+            <a class="btn lq-outcome-quit-btn" href="#">QUIT</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

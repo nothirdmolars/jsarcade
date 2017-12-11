@@ -1,0 +1,58 @@
+<!-- THE HTML CONTENTS OF THIS FILE WILL BE LOADED INTO
+    THE MAIN GAMEPLAY WINDOW WHEN SELECTED -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RPSLS</title>
+</head>
+
+<body>
+    <!--Container for title screen element-->
+    <div id="title-screen">
+        <div id="title-logo" class="rps-title-background">
+            <h3 id="title-header" class="font-press-start yellow">Rock, Paper, Scissors, Lizard, Spock</h3>
+            <h5 id="title-sub-header" class="font-mont white">The classic hand game with a twist</h5>
+        </div>
+        <a id="title-start-btn" class="font-press-start" href="#">NEW GAME</a>
+        <p id="title-message" class="white font-mont">Start a new game or press the home button to return to the game selection screen</p>
+    </div>
+
+    <div id="gameplay-screen" class="hide">
+        <div class="rps-ingame-menu font-mont">
+            <!-- player choice selection menu -->
+            <a class="rps-choice-rock" href="#">
+                <i class="fa fa-hand-rock-o fa-fw fa-lg"></i>&nbsp;Rock
+            </a>
+            <a class="rps-choice-paper" href="#">
+                <i class="fa fa-hand-paper-o fa-fw fa-lg"></i>&nbsp;Paper
+            </a>
+            <a class="rps-choice-scissors" href="#">
+                <i class="fa fa-hand-scissors-o fa-fw fa-lg"></i>&nbsp;Scissors
+            </a>
+            <a class="rps-choice-lizard" href="#">
+                <i class="fa fa-hand-lizard-o fa-fw fa-lg"></i>&nbsp;Lizard
+            </a>
+            <a class="rps-choice-spock" href="#">
+                <i class="fa fa-hand-spock-o fa-fw fa-lg"></i>&nbsp;Spock
+            </a>
+        </div>
+
+        <div class="rps-tie-message font-press-start hide">
+            <p>TIE... CHOOSE AGAIN!</p>
+        </div>
+
+        <div class="rps-end-game-message font-press-start hide">
+            <p id="rps-outcome-choices-msg">CHOICES</p>
+            <p id="rps-outcome-winner-msg">DID YOU WIN?</p>
+            <p id="rps-outcome-records-msg"># CONSECUTIVE WINS</p>
+            <a id="rps-outcome-play-again-btn" href="#">PLAY AGAIN?</a>
+            <a id="rps-outcome-quit-btn" href="#">QUIT</a>
+        </div>
+    </div>
+</body>
+
+</html>
